@@ -1,0 +1,11 @@
+body{
+    background-color: aquamarine;
+    transition: background-color 5s ease-in-out  7s;
+}
+img{
+    transition: transform 6s ease-in;
+
+}
+img:hover{
+    
+}

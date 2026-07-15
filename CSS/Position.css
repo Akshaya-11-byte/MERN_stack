@@ -1,0 +1,17 @@
+Form{
+    margin: 0.3cm 0.2cm 0.5cm 0.1cm;
+    border-style: groove;
+    border-color: chocolate ;
+    border-width: 0.6cm;
+    border-radius: 50px;
+    padding: 0.6cm 0.2cm 0.5cm 0.8cm;
+}
+h1{
+    position: static;
+    top: 0.2cm;
+}
+#no{
+    position: fixed;
+    right: 5cm;
+    
+}

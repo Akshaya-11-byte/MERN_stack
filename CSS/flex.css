@@ -5,11 +5,12 @@
 .container{
     display:flex;
     background-color: grey;
+    justify-content: space-between;
 }
 .box{
     width: 100px;
     height: 100px;
-    background-color: rgb(130, 146, 107);
+    background-color: rgb(132, 206, 30);
     color: white;
     text-align: center;
     margin: 10px;

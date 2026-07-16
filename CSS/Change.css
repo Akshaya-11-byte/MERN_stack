@@ -1,11 +1,22 @@
 body{
-    background-color: aquamarine;
-    transition: background-color 5s ease-in-out  7s;
+    background-color:aquamarine;
+    transition: background-color 1s ease-in;
+}
+body:hover{
+    background-color:chartreuse;
 }
 img{
-    transition: transform 6s ease-in;
-
+    width:300px;
+    transition:transform 0.5s ease;
 }
+
 img:hover{
-    
+    background-color: rgb(227, 84, 84);
+    transform:translate(20px,20px);
+    transition: transform 0.3s ease;
+    animation: upDown 0.5s infinite alternate;
+}
+video:hover{
+    transform: translate(20px,20px);
+    transition:transform 0.3s ease;
 }

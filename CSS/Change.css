@@ -7,16 +7,31 @@ body:hover{
 }
 img{
     width:300px;
-    transition:transform 0.5s ease;
+    animation: moves 10s linear 3s 4;
 }
+    @keyframes moves{
+        0%
+        {
+            background-color:burlywood;
+            color: blue;
+        }
+        80%{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: aliceblue;
+            color: aqua;        }
+    }
+    /*transition:transform 0.5s ease;*/
+
 
 img:hover{
     background-color: rgb(227, 84, 84);
     transform:translate(20px,20px);
     transition: transform 0.3s ease;
-    animation: upDown 0.5s infinite alternate;
 }
 video:hover{
     transform: translate(20px,20px);
     transition:transform 0.3s ease;
 }
+/*img:hover{
+    transform:skew(20deg);
+}*/

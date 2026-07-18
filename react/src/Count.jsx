@@ -1,4 +1,6 @@
 import {useEffect, useState} from "react";
+import userContext from "./UserContact.jsx";
+import Parent from "./Parent.jsx";
 import "./Count.css";
 
 function Count(){
@@ -38,6 +40,9 @@ function Count(){
                 }
                 />
             </div>
+            <userContext.Provider value="Akshaya">
+                <Parent />
+            </userContext.Provider>
         </>
     );
 

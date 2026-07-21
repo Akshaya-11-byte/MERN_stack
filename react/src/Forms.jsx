@@ -22,7 +22,7 @@ function Forms(){
         alert("Form Submitted.")
     };
     return(
-        <div style={{margin:"20px"}}>
+        <div style={{margin:"10px"}}>
             <h1>Forms</h1>
             <form onSubmit={handleSubmit}>
                 <label><b>Name:</b></label>
@@ -55,6 +55,35 @@ function Forms(){
 
 
             </form>
+            <div style={{position:"relative",top:2}}>
+                <table>
+                    <tr>
+                        <th>Name:</th>
+                        <td>{User.name}</td>
+                    </tr>
+                    <tr>
+                        <th>email:</th>
+                        <td>{User.email}</td>
+                    </tr>
+                    <tr>
+                        <th>password:</th>
+                        <td>{User.password}</td>
+                    </tr>
+                    <tr>
+                        <th>Phone:</th>
+                        <td>{User.phone}</td>
+                    </tr>
+                    <tr>
+                        <th>Gender:</th>
+                        <td>{User.gender}</td>
+                    </tr>
+                    <tr>
+                        <th>skills:</th>
+                        <td>{User.skills}</td>
+                    </tr>
+
+                </table>
+            </div>
         </div>
     );
 }

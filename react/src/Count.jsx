@@ -23,7 +23,7 @@ function Count(){
             >
                 +1
             </button>
-            <button  onClick={
+            <button  onDoubleClick={
                 ()=>setCount(count-1)
             }>
                 -1

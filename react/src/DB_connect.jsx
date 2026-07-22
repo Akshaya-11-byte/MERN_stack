@@ -1,4 +1,4 @@
-import React,{ useState } from "react";
+  import React,{ useState } from "react";
 
 function DB_connect()
 {
@@ -57,11 +57,25 @@ function DB_connect()
         {
             setLoading(false);
         }
-        return(
-            <>
-                
-            </>
-        );
+        
     }
+    return(
+        <>
+        <div>
+            <h1>send message</h1>
+            <form onSubmit={handleSubmit}>
+                <label><b>Name:</b></label>
+                <input type="text" name="name" value={FormData.name} required/>
+                <label><b>email:</b></label>
+                <input type="email" name="name" value={FormData.email} required/>
+                <label><b>msgs:</b></label>
+                <input type="text" name="message" value={FormData.message} required/>
+                <button type="submit" disabled={Loading}>
+                    submit
+                </button>
+            </form>
+        </div>
+        </>
+    );
 }
 export default DB_connect;

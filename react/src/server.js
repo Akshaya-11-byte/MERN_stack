@@ -7,7 +7,7 @@ const app=express();
 const PORT=process.env.PORT || 5000;
 app.use(cors({origin:"http://localhost:5173"}));
 app.use(express.json());
-const MONGO_URL=process.env.MONGO_URL || 'mongodb://127.0.0.1:27017/'
+const MONGO_URL=process.env.MONGO_URL || 'mongodb://127.0.0.1:27017/contactDB'
 mongoose.connect(MONGO_URL)
 .then(()=>console.log("Database connected."))
 .catch((err)=>console.error(err.message));
@@ -41,4 +41,4 @@ app.listen(PORT,()=>
 {
     console.log(""); 
 }
-)
+);

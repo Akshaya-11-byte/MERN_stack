@@ -1,6 +1,6 @@
-  import React,{ useState } from "react";
+import React,{ useState } from "react";
 
-function DB_connect()
+function DB_connect()  
 {
 
     const [FormData,setFormData]=useState({
